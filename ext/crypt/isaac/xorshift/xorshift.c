@@ -33,7 +33,7 @@ static VALUE Xorshift64Star_initialize( VALUE self, VALUE args ) {
   return _seed;
 }
 
-static VALUE to_hex_block( VALUE arg, VALUE data, int argc, const VALUE* argv, VALUE blockarg ) {
+static VALUE to_hex_block( VALUE arg, VALUE data, int argc, const VALUE *argv, VALUE blockarg ) {
   return rb_funcall( arg, rb_intern( "to_s" ), 1, INT2FIX( 16 ) );
 }
 
